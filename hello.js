@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
  
 export class Hello extends React.Component {
   render() {
-    return <h1>Hello</h1>
+    return(<h1>Hello {this.props.name}!</h1>);
   }
 }
