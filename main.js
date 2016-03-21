@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom';
 import {Hello} from './hello';
 
 class App extends React.Component {
+  state = {
+    name: 'world'
+  };
+
   constructor() {
     super();
-    this.state = { name: 'world' };
   };
 
   handleChange(e) {

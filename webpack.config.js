@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: './main.js',
@@ -17,4 +18,11 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      proxy: 'http://localhost:8080/'
+    }
+ )]
 };
