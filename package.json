@@ -1,11 +1,7 @@
 {
   "name": "react-screencast",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --progress --colors -w"
   },
   "author": "",
   "license": "ISC",
